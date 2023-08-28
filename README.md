@@ -51,5 +51,5 @@ visualization for mobil devices
 
 ## Author
 
-- * Yerti Mariela Mosqueira Briceño *
+- *Yerti Mariela Mosqueira Briceño*
 - Frontend Mentor - [@yerti](https://www.frontendmentor.io/profile/yerti)
