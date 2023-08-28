@@ -1,0 +1,126 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    --big-shoulders-display: 'Big Shoulders Display', cursive;
+    --Lexend-Deca: 'Lexend Deca', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styles for card content */
+.content-card {
+    display: flex;
+}
+
+.card-01,
+.card-02,
+.card-03 {
+    height: 500px;
+    width: 307px;
+    padding: 40px;
+}
+
+.card-01 {
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+.card-02 {
+    background-color: var(--Dark-cyan);
+}
+.card-03 {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+/* styles for the paragraph and the title of h2 style */
+h2 {
+    font-size: 40px;
+    color: var(--Very-light-gray);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: var(--big-shoulders-display);
+}
+p {
+    font-size: 15px;
+    color: var(--Transparent-white);
+    font-family: var(--Lexend-Deca);
+}
+
+/* styles for the button */
+button {
+    height: 48px;
+    width: 146px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 100px;
+    font-size: 15px;
+}
+.card-01  button {
+    color: var(--Bright-orange);
+}
+.card-02 button {
+    color: var(--Dark-cyan);
+}
+.card-03 button {
+    color: var(--Very-dark-cyan);
+}
+
+/* styles for the active button */
+button:hover {
+    cursor: pointer;
+    border: 2px solid var(--Very-light-gray);
+    color: var(--Very-light-gray);
+}
+.card-01 button:hover {
+    background-color: var(--Bright-orange);
+}
+.card-02 button:hover {
+    background-color: var(--Dark-cyan);
+}
+.card-03 button:hover {
+    background-color: var(--Very-dark-cyan);
+}
+
+/* Responsive web Design */
+@media (max-width: 1000px) {
+    main {
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .content-card {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-01,
+    .card-02,
+    .card-03 {
+        width: 327px;
+        height: 442px;
+    }
+    .card-01 {
+        border-radius: 10px 10px 0 0;
+    }
+    .card-03 {
+        border-radius: 0 0 10px 10px;
+    }
+    button {
+        margin-top: 35px;
+    }
+}
